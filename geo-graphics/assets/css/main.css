@@ -145,3 +145,84 @@ a {
 .cloud__text {
 
 }
+
+/* Captchas Page */
+
+.row {
+  flex: 0 0 100%;
+}
+
+.captchas {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.captchas__text {
+  position: absolute;
+  color: black;
+  z-index: 10;
+  font-weight: bolder;
+  font-size: 10vw;
+  align-self: center;
+  cursor: help;
+}
+
+.captchas__text:hover {
+  animation: blinker 0.1s step-start infinite;
+}
+
+.captcha__image {
+  position: absolute;
+  left: -100vw;
+  width: 100vw;
+  height: 33.333vh;
+}
+
+.captcha__image--1 {
+  background-image: url('../images/1.png');
+  background-blend-mode: difference;
+  animation: slide 10s linear 0s infinite;
+}
+
+.captcha__image--2 {
+  background-image: url('../images/2.jpg');
+  background-blend-mode: difference;
+  animation: slide 10s linear 2s infinite;
+}
+
+.captcha__image--3 {
+  background-image: url('../images/3.jpg');
+  background-blend-mode: difference;
+  animation: slide 10s linear 4s infinite;
+}
+
+.captcha__image--4 {
+  background-image: url('../images/4.png');
+  background-blend-mode: difference;
+  animation: slide 10s linear 6s infinite;
+}
+
+.captcha__image--5 {
+  background-image: url('../images/5.jpg');
+  background-blend-mode: difference;
+  animation: slide 10s linear 8s infinite;
+}
+
+.captcha__image--6 {
+  background-image: url('../images/6.jpg');
+  background-blend-mode: difference;
+  animation: slide 10s linear 10s infinite;
+}
+
+@keyframes slide {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 100%;
+  }
+}
