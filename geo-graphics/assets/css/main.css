@@ -89,21 +89,27 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  font-size: 2vw;
 }
 
 .checkers__black {
-  background-color: black;
+  background: black;
+  color: lime;
   flex: 0 0 50%;
   width: 50vh;
   height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .checkers__white {
-  background-color: white;
-  color: black;
+  background: blue;
+  color: white;
   flex: 0 0 50%;
   width: 50vh;
   height: 50vh;
+  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 /* Clouds */
