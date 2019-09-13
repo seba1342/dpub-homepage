@@ -12,20 +12,16 @@
 </head>
 
 <body>
-  <div class="cloud__pattern">
-    <div class="cloud__circle"></div>
-    <div class="cloud__circle"></div>
-    <div class="cloud__circle"></div>
-    <div class="cloud__circle"></div>
-    <div class="cloud__circle"></div>
-    <div class="cloud__circle"></div>
-    <div class="cloud__circle"></div>
-    <div class="cloud__circle"></div>
-    <div class="cloud__text__container">
-      <div class="cloud__text__background">
-        <div class="cloud__text">☁️️️️️️☁️</div>
-      </div>
-    </div>
+  <div class="clouds">
+    <div class="cloud--text">You have now entered the cloud</div>
+    <div class="cloud--circle"></div>
+    <svg width="0" height="0">
+      <filter id="filter">
+        <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="10" seed="420" />
+        <feDisplacementMap in="SourceGraphic" scale="180" />
+      </filter>
+    </svg>
+  </div>
 </body>
 
 </html>
