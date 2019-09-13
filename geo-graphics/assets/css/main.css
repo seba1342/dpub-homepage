@@ -32,7 +32,7 @@ a:hover {
 }
 
 .index__name {
-  flex: 0 0 50%;
+  flex: 0 0 25%;
 }
 
 .index__layer {
@@ -40,7 +40,7 @@ a:hover {
 }
 
 .index__tag {
-  flex: 0 0 25%;
+  flex: 0 0 50%;
 }
 
 /* IP Page */
@@ -422,4 +422,39 @@ a:hover {
   to {
     transform: translateY(150%);
   }
+}
+
+/* Trolol */
+
+.trolol {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top, lime, blue);
+  background-size: 400% 400%;
+  animation: backgroundGradient 5s ease-in-out infinite alternate;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.trolol__image {
+  animation: spin 0.2s ease-in-out 0s infinite alternate;
+  width: 50vw;
+}
+
+.trolol__image:hover {
+  animation: none;
+}
+
+@keyframes backgroundGradient {
+  0%{background-position:0% 40%}
+  50%{background-position:100% 60%}
+  100%{background-position:0% 40%}
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
 }
