@@ -1,5 +1,5 @@
 body {
-	font-family: Helvetica,Arial,sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 32px;
   background-color: black;
   color: white;
@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color:lime;
+  color: lime;
 }
 
 a:hover {
@@ -15,6 +15,7 @@ a:hover {
 }
 
 /* Index Homepage */
+
 .index__intro {
   font-size: 5vw;
   margin-bottom: 5vh;
@@ -44,6 +45,7 @@ a:hover {
 }
 
 /* IP Page */
+
 .ip {
   background-color: magenta;
   height: 100vh;
@@ -144,7 +146,6 @@ a:hover {
   from {
     transform: translateX(-200%);
   }
-
   to {
     transform: translateX(150%);
   }
@@ -232,6 +233,7 @@ a:hover {
 }
 
 /* Twitch.tv */
+
 /* https://codepen.io/chriscoyier/pen/xxKRQRm */
 
 .twitch {
@@ -314,6 +316,7 @@ a:hover {
     clip-path: inset(54% 0 12% 0);
   }
 }
+
 .twitch__text::after {
   content: attr(data-text);
   position: absolute;
@@ -391,6 +394,7 @@ a:hover {
     clip-path: inset(96% 0 5% 0);
   }
 }
+
 .twitch__text::before {
   content: attr(data-text);
   position: absolute;
@@ -418,7 +422,6 @@ a:hover {
   from {
     transform: translateY(-200%);
   }
-
   to {
     transform: translateY(150%);
   }
@@ -449,14 +452,24 @@ a:hover {
 }
 
 @keyframes backgroundGradient {
-  0%{background-position:0% 40%}
-  50%{background-position:100% 60%}
-  100%{background-position:0% 40%}
+  0% {
+    background-position: 0% 40%
+  }
+  50% {
+    background-position: 100% 60%
+  }
+  100% {
+    background-position: 0% 40%
+  }
 }
 
 @keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Test */
@@ -476,6 +489,7 @@ a:hover {
 }
 
 /* Cookies */
+
 .cookies {
   display: flex;
   width: 100vw;
@@ -495,11 +509,61 @@ a:hover {
 
 @keyframes cookies {
   from {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
     /* left: 0%; */
   }
   to {
-    transform:rotate(360deg);
+    transform: rotate(360deg);
     /* left: 100%; */
   }
+}
+
+/* Fingerprint page */
+
+.fingerprint {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  animation: background_cycle 100s infinite;
+}
+
+.fingerprint svg {
+  flex: 0 0 25%;
+  fill: blue;
+  animation: fill_cycle 100s infinite;
+}
+
+.bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  animation: background_cycle 100s infinite;
+}
+
+@keyframes fill_cycle {
+  0%   {fill: rgb(82, 179, 217);}
+  12.5%  {fill: rgb(190, 144, 212);}
+  25%  {fill: rgb(246, 36, 89);}
+  37.5%  {fill: rgb(249, 105, 14);}
+  50% {fill: rgb(238, 238, 0);}
+  65.5% {fill: rgb(38, 194, 129);}
+  75% {fill: rgb(51, 110, 123);}
+  100% {fill: rgb(82, 179, 217);}
+}
+
+@keyframes background_cycle {
+  0%   {background: rgb(190, 144, 212);}
+  12.5%  {background: rgb(246, 36, 89);}
+  25%  {background: rgb(249, 105, 14);}
+  37.5%  {background: rgb(238, 238, 0);}
+  50% {background:rgb(38, 194, 129); }
+  65.5% {background: rgb(51, 110, 123);}
+  75% {background: rgb(82, 179, 217);}
+  100% {background: rgb(82, 179, 217);}
 }
