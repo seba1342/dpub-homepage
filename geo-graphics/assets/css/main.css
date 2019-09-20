@@ -675,3 +675,64 @@ a:hover {
     transform: rotateX(360deg)
   }
 }
+
+
+/* Cloudy page */
+
+.cloudy {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  font-size: 2vw;
+  align-items: center;
+	justify-content: center;
+}
+
+.cloudy__item {
+  background: black;
+  color: lime;
+  flex: 0 0 50%;
+  width: 50vh;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+	justify-content: center;
+}
+
+.cloudy__item--1 {
+  background-image: url('../images/cloud1.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: difference;
+}
+
+.cloudy__item--2 {
+  background-image: url('../images/cloud2.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: difference;
+}
+
+.cloudy__item--3 {
+  background-image: url('../images/cloud3.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: difference;
+}
+
+.cloudy__item--4 {
+  background-image: url('../images/cloud4.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: difference;
+}
+
+.cloudy__text {
+  position: absolute;
+  font-size: 7vw;
+  mix-blend-mode: difference;
+}
