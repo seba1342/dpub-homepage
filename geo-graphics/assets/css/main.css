@@ -735,4 +735,15 @@ a:hover {
   position: absolute;
   font-size: 7vw;
   mix-blend-mode: difference;
+
+  animation: textColor 5s ease-in-out infinite;
+}
+
+@keyframes textColor {
+  from {
+    color: lime;
+  }
+  to {
+    color: blue;
+  }
 }
