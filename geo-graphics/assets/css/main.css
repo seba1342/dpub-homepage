@@ -736,7 +736,7 @@ a:hover {
   font-size: 7vw;
   mix-blend-mode: difference;
 
-  animation: textColor 5s ease-in-out infinite;
+  animation: textColor 5s ease-in-out infinite alternate;
 }
 
 @keyframes textColor {
