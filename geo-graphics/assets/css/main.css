@@ -700,7 +700,7 @@ a:hover {
 }
 
 .cloudy__item--1 {
-  background-image: url('../images/cloud1.png');
+  background-image: url('../images/cloud.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -745,5 +745,98 @@ a:hover {
   }
   to {
     color: blue;
+  }
+}
+
+/* Type scene */
+
+.scene {
+  background: lightskyblue;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sun {
+  font-size: 10vw;
+  color: yellow;
+  float: right;
+}
+
+.cloud {
+  font-size: 5vw;
+  position: absolute;
+  left: -20%;
+  font-weight: 900;
+  width: 100vw;
+}
+
+.cloud--1 {
+  animation: cloud 9s linear 0s infinite;
+}
+
+.cloud--2 {
+  top: 5vh;
+  animation: cloud 9s linear 2s infinite;
+}
+
+.cloud--3 {
+  top: 8vh;
+  animation: cloud 10s linear 5s infinite;
+}
+
+.cloud--4 {
+  top: 13vh;
+  animation: cloud 9s linear 7s infinite;
+}
+
+.cloud--5 {
+  top: 16vh;
+  animation: cloud 10s linear 10s infinite;
+}
+
+.cloud--6 {
+  top: 20vh;
+  animation: cloud 10s linear 14s infinite;
+}
+
+.bird {
+  position: absolute;
+  left: -20%;
+  font-size: 1vw;
+  width: 100vw;
+  color: black;
+}
+
+.bird--1 {
+  top: 20vh;
+  animation: cloud 15s ease-in-out 0s infinite;
+}
+
+.bird--2 {
+  top: 30vh;
+  animation: cloud 15s ease-in-out 4s infinite;
+}
+
+.grass {
+  font-size: 3vw;
+  bottom: 0;
+  position: absolute;
+  height: 25vh;
+  width: 105vw;
+  color: green;
+  letter-spacing: -1vw;
+  line-height: 2vw;
+  background-color: lightgreen;
+  overflow: hidden;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 25%;
+}
+
+@keyframes cloud {
+  from {
+    transform: translateX(120%);
+  }
+  to {
+    transform: translateX(-20%);
   }
 }
