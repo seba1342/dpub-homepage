@@ -890,3 +890,44 @@ a:hover {
   flex: 0 0 50%;
   object-fit: cover;
 }
+
+.voice {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  overflow: hidden;
+}
+
+.voice__item {
+  flex: 0 0 33.333%;
+  background-size: cover;
+  animation: backgroundSize 0.5s infinite;
+}
+
+.voice__item--google {
+  background-image: url('../images/google.svg');
+  transform: rotateZ(45deg);
+  background-color: rgb(246, 36, 89);
+  mix-blend-mode: difference;
+}
+
+.voice__item--siri {
+  background-image: url('../images/siri.svg');
+  transform: rotateZ(90deg);
+  background-color: violet;
+  mix-blend-mode: difference;
+}
+
+.voice__item--alexa {
+  background-image: url('../images/alexa.svg');
+  transform: rotateZ(135deg);
+  background-color: lightskyblue;
+  mix-blend-mode: difference;
+}
+
+@keyframes backgroundSize {
+  50% {
+    background-size: contain;
+  }
+}
