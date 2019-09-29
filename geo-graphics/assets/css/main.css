@@ -840,3 +840,40 @@ a:hover {
     transform: translateX(-20%);
   }
 }
+
+.wifi {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/wifi.gif');
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.wifi__image {
+  mix-blend-mode: difference;
+}
+
+.tos {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.tos__item {
+  flex: 0 0 33.333%;
+}
+
+.tos__item--facebook {
+  color: blue;
+}
+
+.tos__item--instagram {
+  color: violet;
+}
+
+.tos__item--snapchat {
+  color: yellow;
+}
