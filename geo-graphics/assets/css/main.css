@@ -877,3 +877,16 @@ a:hover {
 .tos__item--snapchat {
   color: yellow;
 }
+
+.firewall {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.firewall__item {
+  flex: 0 0 50%;
+  object-fit: cover;
+}
