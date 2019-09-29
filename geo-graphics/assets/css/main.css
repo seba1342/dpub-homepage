@@ -931,3 +931,34 @@ a:hover {
     background-size: contain;
   }
 }
+
+.sync {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.sync__item {
+  flex: 0 0 50%;
+}
+
+.sync__item__upper {
+  animation: background_cycle 20s infinite;
+}
+
+.sync__item__lower {
+  animation: background_cycle 20s infinite reverse;
+}
+
+.sync__image {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  align-self: center;
+  animation: spin 1s ease-in-out infinite;
+  background-image: url('../images/refresh.svg');
+}
+
+
