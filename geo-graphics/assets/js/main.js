@@ -12,3 +12,4 @@ function fuckMeUp() {
     button.innerText = "☠️ Fuck me up 💀";
   }
 }
+
